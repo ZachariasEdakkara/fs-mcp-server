@@ -17,7 +17,7 @@ A local MCP server that gives Claude Desktop the ability to read and search your
 
 ## Claude Desktop config
 
-\`\`\`json
+```json
 {
   "mcpServers": {
     "filesystem": {
@@ -26,4 +26,4 @@ A local MCP server that gives Claude Desktop the ability to read and search your
     }
   }
 }
-\`\`\`
+```

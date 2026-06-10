@@ -18,7 +18,7 @@ def safe_path(raw: str) -> Path:
     """Resolve a path and block anything outside ALLOWED_ROOT."""
     p = Path(raw).expanduser().resolve()
     if not p.is_relative_to(ALLOWED_ROOT):
-        raise ValueError(f"Access denied: {p} is outside the allowed root.")
+        raise ValueError(f"Access denied: {p} is outside the allowed root directory.")
     return p
 
 
